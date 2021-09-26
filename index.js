@@ -1,11 +1,11 @@
-const input = document.getElementById('input');
+const input = document.getElementById("input");
 
-function clickAlert(){
-    alert("I was clicked")
-};
+function clickedHappend(e) {
+  alert("I was click");
+}
 
-function addingEventListener() {
-input.addEventListener('click',clickAlert);
-};
+function addingEventListener(someFunction) {
+  input.addEventListener("click", someFunction);
+}
 
-addingEventListener();
+addingEventListener(clickedHappend);
